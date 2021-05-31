@@ -3,6 +3,8 @@ package cursojava.classes;
 import java.util.ArrayList;
 import java.util.List;
 
+import constantes.StatusAluno;
+
 public class Aluno {
 
 	String nome;
@@ -38,12 +40,12 @@ public class Aluno {
 		double media = this.getMedia();
 		if (media >= 50) {
 			if (media >= 70) {
-				return "Aluno aprovado!";
+				return StatusAluno.APROVADO;
 			} else {
-				return "Aluno em recuperação!";
+				return StatusAluno.RECUPERAÇÃO;
 			}
 		} else {
-			return "Aluno reprovado!";
+			return StatusAluno.REPROVADO;
 		}
 	}
 
