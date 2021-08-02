@@ -14,8 +14,8 @@ public class TesteBancoJdbc {
 		UserDaoJava userDaoJava = new UserDaoJava();
 		UserPosJava userPosJava = new UserPosJava();
 
-		userPosJava.setNome("Marilia Monteiro Aguiar Marchiori");
-		userPosJava.setEmail("mahohnols@hotmail.com");
+		userPosJava.setNome("M M M ");
+		userPosJava.setEmail("MMM@hotmail.com");
 
 		userDaoJava.salvar(userPosJava);
 	}
